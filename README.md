@@ -19,7 +19,7 @@ result := <-subprocess.
   Pipe("wc", "-l").
   Connect()
 
-// ls -al | wc
+// $ ls -al | wc -l
 fmt.Println(result.Stdout)
 ```
 
